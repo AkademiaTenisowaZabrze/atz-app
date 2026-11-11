@@ -132,7 +132,8 @@
     fetch('config.json', { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (c) {
-        if (c && c.webAppUrl) {
+        // Tylko adres https:// — nigdy np. javascript:, gdyby config.json został podmieniony.
+        if (c && typeof c.webAppUrl === 'string' && /^https:\/\//.test(c.webAppUrl)) {
           var b = document.getElementById('web-btn');
           b.href = c.webAppUrl;
           b.hidden = false;
