@@ -1,34 +1,52 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url('rubik-latin-ext-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url('rubik-latin-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Barwy z logo i strony akademii: grafit #1D1D1D, pomarańcz #FD4E19, tło #F1F1F1. */
 :root {
-  --primary: #00677c;
+  --primary: #c93a0c;
   --on-primary: #ffffff;
-  --primary-container: #b1ebff;
-  --on-primary-container: #001f27;
-  --accent: #e8541e;
-  --tertiary-container: #e3dfff;
-  --on-tertiary-container: #1b1a4a;
-  --bg: #f8fafb;
+  --primary-container: #ffe2d8;
+  --on-primary-container: #5c1500;
+  --accent: #fd4e19;
+  --tertiary-container: #d4f1e8;
+  --on-tertiary-container: #00382c;
+  --bg: #f1f1f1;
   --surface: #ffffff;
-  --surface-2: #eef3f5;
-  --text: #191c1d;
-  --muted: #40484b;
-  --outline: #c0c8cb;
+  --surface-2: #e8e8e8;
+  --text: #1d1d1d;
+  --muted: #4c4c4c;
+  --outline: #d6d6d6;
   --radius: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #86d1e9;
-    --on-primary: #003642;
-    --primary-container: #004e5e;
-    --on-primary-container: #b1ebff;
-    --tertiary-container: #333260;
-    --on-tertiary-container: #e3dfff;
-    --bg: #101415;
-    --surface: #191d1f;
-    --surface-2: #22282a;
-    --text: #e0e3e4;
-    --muted: #bfc8cb;
-    --outline: #3f484b;
+    --primary: #ff7b4d;
+    --on-primary: #3a0e00;
+    --primary-container: #7a2204;
+    --on-primary-container: #ffdbcf;
+    --tertiary-container: #00513f;
+    --on-tertiary-container: #bdf0e1;
+    --bg: #121212;
+    --surface: #1c1c1c;
+    --surface-2: #262626;
+    --text: #ededed;
+    --muted: #bdbdbd;
+    --outline: #3a3a3a;
   }
 }
 
@@ -37,7 +55,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Rubik', system-ui, 'Segoe UI', Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
